@@ -1,4 +1,4 @@
-#!/usr/bin/env	python2
+#!/usr/bin/env	python2.7
 '''
 Get Latitude and Longitude and timestamp data
 parse to API Get the Full Details and write to CSV file
@@ -50,12 +50,6 @@ def getlatlon():
 	return uniqlatlon
 
 uniqlatlon=getlatlon()
-#print uniqlatlon
-#print uniqlatlon[0]
-#print uniqlatlon[0][0]
-#print uniqlatlon[0][1]
-#print uniqlatlon[0][2]
-#print len(uniqlatlon)
 
 def createcsv(file):
 

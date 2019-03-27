@@ -1,4 +1,4 @@
-#!/usr/bin/env  python2
+#!/usr/bin/env  python2.7
 '''
 Voice Assistant MyActivity Questions and Answer, 
 Other Activity like Phone Call, Message, Opening Application

@@ -1,4 +1,4 @@
-#!/usr/bin/env 	python2
+#!/usr/bin/env 	python2.7
 '''
 Android Activity
 Most Used Android Apps

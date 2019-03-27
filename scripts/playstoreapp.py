@@ -1,14 +1,14 @@
-#!/usr/bin/env 	python2
+#!/usr/bin/env 	python2.7
 # -*- coding: utf-8 -*-
 '''
-GooglePlaystore 
+GooglePlaystore
 Installed, Uninstalled, AllApplication and its time write to csv file
 Top Count
 '''
 import re
 from wrcsv import *
 
-#--activity in HTML format-- 
+#--activity in HTML format--
 a=gethtmldata()
 
 #--Regex Expression--
@@ -17,12 +17,12 @@ installed=re.findall(r'Installed\xc2\xa0<a.*?>([\w\s\:\;\&]+)</a><br>([\w\s\,\:]
 uninstalled=re.findall(r'Uninstalled\xc2\xa0<a.*?>([\w\s\:\;\&]+)</a><br>([\w\s\,\:]+)</div>',a)
 
 #--write data to csv file--
-writecsv("Installed",['Installed','Date'],installed)
-writecsv("Uninstalled",['Uninstalled','Date'],uninstalled)
+writecsv("Installed_Application",['Installed','Date'],installed)
+writecsv("Uninstalled_Application",['Uninstalled','Date'],uninstalled)
 writecsv("AllApplication",['AllApplication','Date'],allapplication)
 
 #--read data from csv file--
-readcsv("Installed")
-readcsv("Uninstalled")
+readcsv("Installed_Application")
+readcsv("Uninstalled_Application")
 readcsv("AllApplication")
 #--print output to terminal--

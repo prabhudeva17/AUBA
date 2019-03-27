@@ -1,4 +1,4 @@
-#!/usr/bin/env	python2
+#!/usr/bin/env	python2.7
 '''
 Chrome Acivity Extensions Used
 Extension.json

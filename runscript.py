@@ -1,13 +1,14 @@
-#!/usr/bin/env	python2
+#!/usr/bin/env	python2.7	
 '''
 --orchestra of whole scipts--
 Unzip the data
 mkdir CSV or check if already exist
-print each Script output to terminal
 run each and every script
+print each Script output to terminal
 finally remove the data
 calculate the overall process time and print
 '''
+
 import zipfile,sys,os
 import subprocess
 from datetime import datetime
@@ -18,6 +19,12 @@ start=datetime.now()
 if not os.path.exists("./CSV"):
 	os.mkdir('CSV')
 
+#--extract zip file--
+zip=zipfile.ZipFile(sys.argv[1])
+zip.extractall()
+print "Extraction Done!"
+
+#--execute the scripts and print output to the screen--
 def printoutput(script):
 	p=subprocess.Popen(script,stdout=subprocess.PIPE)
 	a=p.communicate()[0]
@@ -26,9 +33,6 @@ def printoutput(script):
 	for i in b:
 		print i
 
-zip=zipfile.ZipFile(sys.argv[1])
-zip.extractall()
-print "Extraction Done!"
 
 scripts = [
 				['./scripts/Chrome_BrowserHistory.py',		'./Takeout/Chrome/BrowserHistory.json'],
@@ -44,7 +48,7 @@ scripts = [
 				['./scripts/playmusic.py', 					'./Takeout/My Activity/Google Play Music/MyActivity.html'],
 				['./scripts/googlesearch.py', 				'./Takeout/My Activity/Search/MyActivity.html'],
 				['./scripts/youtube.py', 					'./Takeout/My Activity/YouTube/MyActivity.html'],
-
+				['./scripts/android_device_config.py',		'./Takeout/Android Device Configuration Service/Device-3467564080470419407.html']
 			]
 
 
@@ -61,7 +65,7 @@ printoutput('./scripts/writepdf.py')
 #--Remove the Takeout folder after finishing the analsis--
 os.system('rm -rf ./Takeout')
 
-#--calacuate the stoptime--
+#--calculate the stoptime--
 stop=datetime.now()
 
 #--print the totaltime taken to run the whole scripts--

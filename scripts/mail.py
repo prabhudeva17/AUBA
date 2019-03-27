@@ -1,4 +1,4 @@
-#!/usr/bin/env	python2
+#!/usr/bin/env	python2.7
 '''
 Extract email-ID using regex and validate it 
 write to CSV file then count top20

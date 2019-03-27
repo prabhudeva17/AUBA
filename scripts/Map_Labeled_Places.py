@@ -1,4 +1,4 @@
-#!/usr/bin/env	python2
+#!/usr/bin/env	python2.7
 '''
 Maps
 Maps/My Labeled Places/Labeled places.json
