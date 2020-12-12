@@ -146,7 +146,8 @@ def writepage(subhead):
 coverpage()
 
 #first write android device config
-androiddeviceconfig()
+#androiddeviceconfig()
+
 
 #write all data to pdf
 for file in csvfileandiconimg:
@@ -162,6 +163,7 @@ for file in csvfileandiconimg:
 			print "!NO DATA To Print in PDF"
 
 	#--for Brief_LocationHistory--
+	'''
 	else:
 
 		data,count = toplocations(file[0],"Country")
@@ -181,11 +183,15 @@ for file in csvfileandiconimg:
 			writepage("City")
 		else:
 			print "!NO DATA To Print in PDF"
+	'''
 
 #--Draw HeatMap--
+
+'''
 image_path = './heatmap.png'
 c.drawImage(image_path,0,400,width=600,height=400)
 c.drawImage("./scripts/jpg/auba_logo.jpeg",10,10,width=30,height=10)
+'''
 c.showPage()
 
 #--Done Save the PDF--
