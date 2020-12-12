@@ -37,20 +37,21 @@ def printoutput(script):
 scripts = [
 				['./scripts/Chrome_BrowserHistory.py',		'./Takeout/Chrome/BrowserHistory.json'],
 				['./scripts/Chrome_BrowserExtension.py',	'./Takeout/Chrome/Extensions.json'],
-				['./scripts/mail.py', 						'./Takeout/Mail/All mail Including Spam and Trash.mbox'],
-				['./scripts/Map_Labeled_Places.py',		    './Takeout/Maps/My labeled places/Labeled places.json'],
-				['./scripts/Map_Saved_Places.py', 			'./Takeout/Maps (your places)/Saved Places.json'],
-				['./scripts/Youtube_Liked_Videos.py', 		'./Takeout/YouTube/playlists/likes.json'],
-				['./scripts/location_history.py', 			'./Takeout/Location History/Location History.json'],
+				#['./scripts/mail.py', 						'./Takeout/Mail/All mail Including Spam and Trash.mbox'],
+				#['./scripts/Map_Labeled_Places.py',		    './Takeout/Maps/My labeled places/Labeled places.json'],
+				#['./scripts/Map_Saved_Places.py', 			'./Takeout/Maps (your places)/Saved Places.json'],
+				#['./scripts/Youtube_Liked_Videos.py', 		'./Takeout/YouTube/playlists/likes.json'],
+				#['./scripts/location_history.py', 			'./Takeout/Location History/Location History.json'],
 				['./scripts/android_activity.py', 			'./Takeout/My Activity/Android/MyActivity.html'],
-				['./scripts/assistant_activity.py', 		'./Takeout/My Activity/Assistant/MyActivity.html'],
+				#['./scripts/assistant_activity.py', 		'./Takeout/My Activity/Assistant/MyActivity.html'],
 				['./scripts/playstoreapp.py', 				'./Takeout/My Activity/Google Play Store/MyActivity.html'],
-				['./scripts/playmusic.py', 					'./Takeout/My Activity/Google Play Music/MyActivity.html'],
-				['./scripts/googlesearch.py', 				'./Takeout/My Activity/Search/MyActivity.html'],
+				#['./scripts/playmusic.py', 					'./Takeout/My Activity/Google Play Music/MyActivity.html'],
+				#['./scripts/googlesearch.py', 				'./Takeout/My Activity/Search/MyActivity.html'],
 				['./scripts/youtube.py', 					'./Takeout/My Activity/YouTube/MyActivity.html'],
-				['./scripts/android_device_config.py',		'./Takeout/Android Device Configuration Service/Device-3467564080470419407.html']
+				#['./scripts/android_device_config.py',		'./Takeout/Android Device Configuration Service/Device-3467564080470419407.html']
 			]
 
+print "Scripts worked fine"
 
 for script in scripts:
 
