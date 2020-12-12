@@ -27,8 +27,8 @@ Process involves in the PROJECT are:-
 - Basemap (sudo apt-get install python-mpltoolkits.basemap)
 
 ```sh
-# git clone https://github.com/prabhudeva17/User_Profiling.git
-# cd User_Profiling
+# git clone https://github.com/prabhudeva17/AUBA.git
+# cd AUBA
 # sudo ./runscript.py  takeout-20143434.zip
 ```
 
